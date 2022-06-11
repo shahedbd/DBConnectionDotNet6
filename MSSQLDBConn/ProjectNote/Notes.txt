@@ -1,0 +1,12 @@
+﻿
+
+Install Dependencies:
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.5
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.5
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.5
+
+
+Migration:
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
